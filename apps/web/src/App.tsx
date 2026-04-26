@@ -1,6 +1,7 @@
 import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import StatCard from "./components/StatCard";
+import MigrationWizard from "./components/MigrationWizard";
 
 const stats = [
   { label: "Active Migrations", value: "3", trend: "+1" },
@@ -21,6 +22,8 @@ export default function App() {
               <StatCard key={item.label} {...item} />
             ))}
           </section>
+
+          <MigrationWizard />
 
           <section className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
             <h2 className="text-lg font-semibold mb-4">Migration Plans</h2>
