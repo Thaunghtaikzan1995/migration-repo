@@ -5,3 +5,13 @@
 :root {
   font-family: "Inter", system-ui, sans-serif;
 }
+
+html,
+body {
+  height: 100%;
+}
+
+/* Improve default backgrounds for dark mode */
+body {
+  @apply bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-50;
+}
